@@ -1,4 +1,4 @@
-# Endpoint
+# 1. Endpoint
 
 ## HTTP Request Communication Flow:
 - The browser/client makes an HTTP request to a server. This travels through several layers (from application to physical). The server processes the request, and sends back a response, which goes through the layers back to the client.
@@ -30,7 +30,7 @@
 - 404 Not Found
 - 500 Internal Server Error
 
-# Authentication
+# 2. Authentication
 
 ## Aim of authentication and authorization:
 - **Authentication**: Verifies who a user is.
@@ -43,7 +43,7 @@
 - **Token**: Stateless, stored client-side, scales better, typically used with RESTful APIs.
 - **Session**: Server stores session data between requests, doesn't scale as easily.
 
-# Data Flow
+# 3. Data Flow
 
 ## Identify separate responsibilities:
 - Following MVC: Controllers handle HTTP requests, Services manage business logic, Repositories handle data operations.
@@ -58,7 +58,7 @@
 ## Dependency injection:
 - Spring's core feature. It injects objects dependencies from outside the class, promoting loose coupling.
 
-# Testing
+# 4. Testing
 
 ## Reason for Testing:
 - Testing ensures that the software works as expected and helps in identifying defects. It provides confidence in the software's reliability, boosts development speed by catching issues early, and aids in maintaining code quality during subsequent changes.
@@ -100,7 +100,7 @@ public void testRetrieveUserById() {
 ## Mocking in Testing:
 - **Reason for Mocking**: Simulate behavior of real objects in unit tests. Avoids slow and uncontrollable factors like databases or APIs.
 
-# Database (DB)
+# 5. Database (DB)
 
 ## Data Modeling in DB:
 - Data in relational databases is modeled using tables with columns representing attributes. Rows represent individual instances.
@@ -128,7 +128,7 @@ public void testRetrieveUserById() {
 ## Model Relations in DB:
 - In relational databases, models are related using primary and foreign keys. These keys form relationships like one-to-one, one-to-many, and many-to-many.
 
-# Refactoring
+# 6. Refactoring
 
 ## Refactor Goals:
 - The primary goal is to improve code readability, maintainability, and sometimes performance without changing external behavior.
@@ -147,7 +147,7 @@ public void testRetrieveUserById() {
 - Reduce method complexity by breaking it into smaller functions, avoiding nested loops, simplifying conditions, and use clear variable/method names.
 
 
-# Object-Oriented Programming (OOP)
+# 7. Object-Oriented Programming (OOP)
 
 ## Class vs. Instance:
 - **Class**: A blueprint for objects.
@@ -164,7 +164,7 @@ public void testRetrieveUserById() {
 - **Interfaces**: A contract that any class implementing it must adhere to. All of its methods are abstract (i.e., they have no body), and a class can implement multiple interfaces, ensuring flexibility and specificity in function definitions.
 - **Abstract Classes**: A blueprint for other classes that allows for shared method implementations. It may contain both fully implemented methods and abstract methods (methods without a body). A class can inherit from only one abstract class.
 
-# Development Operations
+# 8. Development Operations
 
 ## Merge Conflicts:
 - Occur when changes in different branches overlap. Resolved manually.
@@ -178,7 +178,7 @@ public void testRetrieveUserById() {
 ## Application Configuration:
 - Different configurations are set up for development, staging, and production environments.
 
-# Error Handling
+# 9. Error Handling
 
 ## Stack Trace:
 - Shows the call stack when an exception occurs. Look for line numbers, method names, and file names.
