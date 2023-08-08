@@ -106,6 +106,9 @@
 ## Style Guides and Linters:
 - They ensure code consistency, making it readable and maintainable. Linters can catch and sometimes fix coding issues automatically.
 
+## Reduce complexity of method:
+- Reduce method complexity by breaking it into smaller functions, avoiding nested loops, simplifying conditions, and using clear naming.
+
 # Object-Oriented Programming (OOP)
 
 ## Class vs. Instance:
