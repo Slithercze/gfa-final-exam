@@ -110,12 +110,12 @@ public void testRetrieveUserById() {
 
 ## Common SQL aggregate functions:
 - COUNT(), SUM(), AVG(), MAX(), MIN().
-  ```sql
-  SELECT COUNT(*) FROM orders;
-  SELECT SUM(amount) FROM orders;
-  SELECT AVG(amount) FROM orders;
-  SELECT MAX(amount) FROM orders;
-  SELECT MIN(amount) FROM orders;
+  ```sql 
+  SELECT COUNT(*) FROM orders; -- Counts the total number of rows in the 'orders' table.
+  SELECT SUM(amount) FROM orders; -- Calculates the sum of 'amount' values in the 'orders' table.
+  SELECT AVG(amount) FROM orders; -- Calculates the average 'amount' value in the 'orders' table.
+  SELECT MAX(amount) FROM orders; -- Retrieves the highest 'amount' value in the 'orders' table.
+  SELECT MIN(amount) FROM orders; -- Retrieves the lowest 'amount' value in the 'orders' table.
   ```
 
 
