@@ -20,6 +20,7 @@
 - **Domain**: `example.com`
 - **Path**: `/users`
 - **Query parameters**: `?id=1`
+- **Fragment**: `#section`
 
 ### Common HTTP status codes:
 - 200 OK
@@ -39,7 +40,7 @@
 - User logs in, server returns a token (e.g., JWT). Subsequent requests include this token for authentication.
 
 ## Token vs. session-based authentication:
-- **Token**: Stateless, scales better, typically used with RESTful APIs.
+- **Token**: Stateless, stored client-side, scales better, typically used with RESTful APIs.
 - **Session**: Server stores session data between requests, doesn't scale as easily.
 
 # Data Flow
@@ -63,8 +64,8 @@
 - Testing ensures that the software works as expected and helps in identifying defects. It provides confidence in the software's reliability, boosts development speed by catching issues early, and aids in maintaining code quality during subsequent changes.
 
 ## Difference between Unit and Integration Tests:
-- **Unit Tests**: Focus on individual units/components of the software without external interactions. They are used to ensure that individual functions/methods/classes work as expected.
-- **Integration Tests**: Ensure different components or systems work together. They focus on the interaction between units or systems like databases.
+- **Unit Tests**: Tests a single unit of code in isolation.
+- **Integration Tests**: Tests the interaction between multiple units/modules.
 
 ## Advantages and Disadvantages of Unit and Integration Tests:
 - **Unit Tests**:
@@ -73,14 +74,51 @@
 - **Integration Tests**:
     - *Advantages*: Identify interaction-based issues.
     - *Disadvantages*: Slower, might not pinpoint exact issue location.
+ 
+## Simple unit test:
+- For a function that adds two numbers: ensure that passing 2 and 3 returns 5.
+```java
+@Test
+public void testAddition() {
+    Calculator calculator = new Calculator();
+    assertEquals(5, calculator.add(2, 3));
+}
+```
+
+## Write simple project specific test cases:
+- Let's consider a user service in a Spring project: 
+```java
+@Test
+public void testRetrieveUserById() {
+    User user = userService.getById(1L);
+    assertNotNull(user);
+    assertEquals("John", user.getName());
+}
+```
+
 
 ## Mocking in Testing:
-- **Reason for Mocking**: Mocking simulates the behavior of real objects, helping in isolating the unit of code from external dependencies, simulating various scenarios, and speeding up tests.
+- **Reason for Mocking**: Simulate behavior of real objects in unit tests. Avoids slow and uncontrollable factors like databases or APIs.
 
 # Database (DB)
 
 ## Data Modeling in DB:
 - Data in relational databases is modeled using tables with columns representing attributes. Rows represent individual instances.
+  
+## Retrieve data from multiple tables using SQL:
+- Using JOIN operations in SQL.
+
+## Common SQL aggregate functions:
+- COUNT(), SUM(), AVG(), MAX(), MIN().
+- **COUNT()**: 
+  ```sql
+  SELECT COUNT(*) FROM orders; Returns the number of rows in a result set.
+  SELECT SUM(amount) FROM orders;
+  SELECT AVG(amount) FROM orders;
+  SELECT MAX(amount) FROM orders;
+  SELECT MIN(amount) FROM orders;
+   ```
+
 
 ## CRUD Operations:
 - **Create**: `INSERT INTO table_name (...) VALUES (...);`
@@ -107,7 +145,8 @@
 - They ensure code consistency, making it readable and maintainable. Linters can catch and sometimes fix coding issues automatically.
 
 ## Reduce complexity of method:
-- Reduce method complexity by breaking it into smaller functions, avoiding nested loops, simplifying conditions, and using clear naming.
+- Reduce method complexity by breaking it into smaller functions, avoiding nested loops, simplifying conditions, and use clear variable/method names.
+
 
 # Object-Oriented Programming (OOP)
 
@@ -123,8 +162,8 @@
 - Bundling data and methods into a single unit and restricting external access.
 
 ## Interfaces vs. Abstract Classes:
-- **Interfaces**: Define contracts classes must follow.
-- **Abstract Classes**: Provide base classes with default behavior.
+- **Interfaces**: A contract that any class implementing it must adhere to. All of its methods are abstract (i.e., they have no body), and a class can implement multiple interfaces, ensuring flexibility and specificity in function definitions.
+- **Abstract Classes**: A blueprint for other classes that allows for shared method implementations. It may contain both fully implemented methods and abstract methods (methods without a body). A class can inherit from only one abstract class.
 
 # Development Operations
 
@@ -150,10 +189,10 @@
 - **Runtime**: Occur during program execution.
 
 ## Error Handling in Java Spring:
-- Use `@ControllerAdvice` and `@ExceptionHandler` for specific exception types.
+- In Java Spring, errors can be managed using try-catch blocks and by throwing specific exceptions.
 
-## Data/Input Validation:
-- Validates data at the entry point, ensuring data integrity and reducing risks.
+## Where and why to use data/input validation:
+- At all entry points (e.g., form inputs, API endpoints). To prevent invalid data and potential security vulnerabilities.
 
 ## Debugging Process:
 1. Identify the Issue.
