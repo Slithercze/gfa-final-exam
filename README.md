@@ -107,6 +107,7 @@ public void testRetrieveUserById() {
   
 ### Retrieve data from multiple tables using SQL:
 - Using JOIN operations in SQL.
+- For example: ```sql SELECT * FROM books JOIN authors ON author.id = books.author_id ```
 
 ### Common SQL aggregate functions:
 - COUNT(), SUM(), AVG(), MAX(), MIN().
