@@ -152,6 +152,7 @@ DELETE from authors WHERE id = 1;
 
 ### Refactor Goals:
 - The primary goal is to improve code readability, maintainability, and sometimes performance without changing external behavior.
+- Úprava kódu bez změny funkcionality
 
 ### Code Smells:
 - Long methods.
