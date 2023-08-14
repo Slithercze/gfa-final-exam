@@ -65,6 +65,7 @@
 ### Dependency injection:
 - Spring's core feature. It injects objects dependencies from outside the class, promoting loose coupling.
 - 'Back in my days we called it "Passing arguments"'
+- It's a fancy way to say passing arguments
 
 # 4. Testing
 
