@@ -85,7 +85,7 @@
     - *Advantages*: Identify interaction-based issues.
     - *Disadvantages*: Slower, might not pinpoint exact issue location.
  
-### Simple unit test:
+### Simple unit test: (napsat jednoduchý unit test na naše algo ve zkoušce)
 - For a function that adds two numbers: ensure that passing 2 and 3 returns 5.
 ```java
 @Test
@@ -95,7 +95,7 @@ public void testAddition() {
 }
 ```
 
-### Write simple project specific test cases:
+### Write simple project specific test cases:  (napsat jednoduchý unit test v našem projektu)
 - Let's consider a user service in a Spring project: 
 ```java
 @Test
