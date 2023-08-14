@@ -193,6 +193,7 @@ DELETE from authors WHERE id = 1;
 
 ### Version Control Workflow:
 - Collaborators create branches, make commits, then merge them into the main branch.
+- Pro každou funkci nová branch.
 
 ### Releasing Code to Production:
 - Code is moved from development to staging/testing, then to production.
