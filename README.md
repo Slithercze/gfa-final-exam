@@ -197,6 +197,10 @@ DELETE from authors WHERE id = 1;
 
 ### Releasing Code to Production:
 - Code is moved from development to staging/testing, then to production.
+-     1. Připojit se na produkční server.
+-     2. Pullnout verzi z gitu.
+-     3. Zbuildit aplikaci na server.
+-     4. Spustit aplikacei např. pres systemd
 
 ### Application Configuration:
 - Different configurations are set up for development, staging, and production environments.
