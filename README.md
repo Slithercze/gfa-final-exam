@@ -129,9 +129,18 @@ SELECT * FROM books JOIN authors ON authors.id = books.author_id
 
 ### CRUD Operations:
 - **Create**: `INSERT INTO table_name (...) VALUES (...);`
+ ```sql
+INSERT INTO authors (name) VALUES ('name')
+  ```
 - **Read**: `SELECT ... FROM table_name WHERE ...;`
 - **Update**: `UPDATE table_name SET ... WHERE ...;`
+```sql
+UPDATE authors SET name = 'new name' WHERE id = 1;
+  ```
 - **Delete**: `DELETE FROM table_name WHERE ...;`
+```sql
+DELETE from authors WHERE id = 1;
+  ```
 
 ### Model Relations in DB:
 - In relational databases, models are related using primary and foreign keys. These keys form relationships like one-to-one, one-to-many, and many-to-many.
