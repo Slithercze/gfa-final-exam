@@ -1,35 +1,35 @@
 # 1. Endpoint
 
-## HTTP Request Communication Flow:
+### Able to explain HTTP request communication flow
 - The browser/client makes an HTTP request to a server. This travels through several layers (from application to physical). The server processes the request, and sends back a response, which goes through the layers back to the client.
 
-### Create an HTTP request:
+### Able to demonstrate how to create an HTTP request
 - **JavaScript**: Use `fetch()` or `XMLHttpRequest`.
 - **Spring**: It handles incoming requests through controller methods annotated with `@RequestMapping` or specific annotations like `@GetMapping` and `@PostMapping`.
 - **request** je methoda post get... nema status code
 - **reponse** ma status code 200, 401 .., nemá metodu
 - create http request: otevru browser, dam google a dam enter
 
-### Recognize a REST endpoint (stateless/resource):
+### Able to recognize a REST endpoint (stateless/resource)
 - **REST** = standart, ktery definuje jak nadesignovat endpoint, returns json
 - **Stateless**: The server doesn't store client state between requests.
 - **Resource-oriented**: Endpoints represent resources, e.g., `/users` for user resources.
 
-### Send or receive data in body or URL params:
+### Able to send or receive data either in body or in URL params
 - **JavaScript**: Use the `body` property in `fetch` for POST requests. Use URL for GET parameters.
 - **Spring**: `@RequestBody` for body data, `@RequestParam` for URL parameters.
 - put nahrazuje cely objekt,
 - patch aktualizuje jen danou vlastnost objektu
 - posíláme data v header, body, url dělíme => path variable, url parameters
 
-### Different parts of a URL:
+### Able to identify the different parts of a URL
 - **Protocol**: `http`
 - **Domain**: `example.com`
 - **Path**: `/users`
 - **Query parameters**: `?id=1`
 - **Fragment**: `#section`
 
-### Common HTTP status codes:
+### Able to describe the most common HTTP response status codes
 - 200 OK
 - 201 Created
 - 400 Bad Request
