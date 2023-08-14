@@ -205,6 +205,9 @@ DELETE from authors WHERE id = 1;
 ### Application Configuration:
 - Ukázat application.properties, něco lokálně, něco pro server, enviroment variables.
 
+### Able to build the app from the command line interface
+- buildnu to přes command ./gradlew build a najdu to v build/libs
+
 # 9. Error Handling
 
 ### Stack Trace:
