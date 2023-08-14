@@ -222,6 +222,7 @@ DELETE from authors WHERE id = 1;
 
 ### Where and why to use data/input validation:
 - At all entry points (e.g., form inputs, API endpoints). To prevent invalid data and potential security vulnerabilities.
+- Vždycky na backendu validuju data, na frontendu to je v poho,
 
 ### Debugging Process:
 1. Identify the Issue.
