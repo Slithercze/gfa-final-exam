@@ -189,6 +189,7 @@ DELETE from authors WHERE id = 1;
 
 ### Merge Conflicts:
 - Occur when changes in different branches overlap. Resolved manually.
+- Je tam =HEAD=  a =origin/master=
 
 ### Version Control Workflow:
 - Collaborators create branches, make commits, then merge them into the main branch.
