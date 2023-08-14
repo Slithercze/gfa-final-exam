@@ -133,6 +133,9 @@ SELECT * FROM books JOIN authors ON authors.id = books.author_id
 INSERT INTO authors (name) VALUES ('name')
   ```
 - **Read**: `SELECT ... FROM table_name WHERE ...;`
+ ```sql
+SELECT * FROM authors WHERE name = 'Miro';
+  ```
 - **Update**: `UPDATE table_name SET ... WHERE ...;`
 ```sql
 UPDATE authors SET name = 'new name' WHERE id = 1;
