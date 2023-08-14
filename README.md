@@ -57,6 +57,7 @@
 
 ### Flow of data:
 - JavaScript fetches data from Spring API -> Spring controller accepts the request -> Service processes -> Repository interacts with database -> Data returns through the layers back to JavaScript.
+- Popsat flow v naší aplikaci (nějakej endpoint asi)
 
 ### Server-side vs. client-side rendering:
 - **Server-side**: Spring returns fully formed HTML (like with Thymeleaf).
