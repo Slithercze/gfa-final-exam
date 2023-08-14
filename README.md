@@ -6,14 +6,21 @@
 ### Create an HTTP request:
 - **JavaScript**: Use `fetch()` or `XMLHttpRequest`.
 - **Spring**: It handles incoming requests through controller methods annotated with `@RequestMapping` or specific annotations like `@GetMapping` and `@PostMapping`.
+- **request** je methoda post get... nema status code
+- **reponse** ma status code 200, 401 .., nemá metodu
+- create http request: otevru browser, dam google a dam enter
 
 ### Recognize a REST endpoint (stateless/resource):
+- **REST** = standart, ktery definuje jak nadesignovat endpoint, returns json
 - **Stateless**: The server doesn't store client state between requests.
 - **Resource-oriented**: Endpoints represent resources, e.g., `/users` for user resources.
 
 ### Send or receive data in body or URL params:
 - **JavaScript**: Use the `body` property in `fetch` for POST requests. Use URL for GET parameters.
 - **Spring**: `@RequestBody` for body data, `@RequestParam` for URL parameters.
+- put nahrazuje cely objekt,
+- patch aktualizuje jen danou vlastnost objektu
+- posíláme data v header, body, url dělíme => path variable, url parameters
 
 ### Different parts of a URL:
 - **Protocol**: `http`
