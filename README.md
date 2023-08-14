@@ -109,7 +109,7 @@ public void testRetrieveUserById() {
 - Using JOIN operations in SQL.
 - For example: 
 ```sql 
-SELECT * FROM books JOIN authors ON author.id = books.author_id
+SELECT * FROM books JOIN authors ON authors.id = books.author_id
 ```
 
 ### Common SQL aggregate functions:
@@ -120,6 +120,10 @@ SELECT * FROM books JOIN authors ON author.id = books.author_id
   SELECT AVG(amount) FROM orders; -- Calculates the average 'amount' value in the 'orders' table.
   SELECT MAX(amount) FROM orders; -- Retrieves the highest 'amount' value in the 'orders' table.
   SELECT MIN(amount) FROM orders; -- Retrieves the lowest 'amount' value in the 'orders' table.
+  ```
+  example: 
+  ```sql 
+  SELECT name, COUNT(books.id) FROM authors JOIN books ON authors.id = author_id GROUP BY authors.id, books.id
   ```
 
 
