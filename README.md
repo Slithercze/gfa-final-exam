@@ -173,6 +173,9 @@ DELETE from authors WHERE id = 1;
 
 ### Style Guides and Linters:
 - They ensure code consistency, making it readable and maintainable. Linters can catch and sometimes fix coding issues automatically.
+- Style guides and linters are essential for code quality and consistency.
+- Style guides provide coding standards, enhancing readability and collaboration.
+- Linters automate style guide enforcement, catching errors and improving code maintainability.
 
 ### Reduce complexity of method:
 - Reduce method complexity by breaking it into smaller functions, avoiding nested loops, simplifying conditions, and use clear variable/method names.
