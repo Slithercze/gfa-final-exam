@@ -192,7 +192,8 @@ DELETE from authors WHERE id = 1;
 - Used when there's a clear "is-a" relationship, e.g., "Car is a Vehicle".
 
 ### Encapsulation in OOP:
-- Bundling data and methods into a single unit and restricting external access.
+- Hiding data within a class, accessed only through defined methods.
+- A class that represents a "Car" with private attributes like "engine" and "fuel" only accessible through getter and setter methods, ensuring controlled access and modification.
 
 ### Interfaces vs. Abstract Classes:
 - **Interfaces**: A contract that any class implementing it must adhere to. All of its methods are abstract (i.e., they have no body), and a class can implement multiple interfaces, ensuring flexibility and specificity in function definitions.
