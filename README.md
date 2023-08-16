@@ -221,7 +221,7 @@ DELETE from authors WHERE id = 1;
 
 ### Able to build the app from the command line interface
 - buildnu to přes command ./gradlew build a najdu to v build/libs
-- .jar file najdu v libs, a to můžu but spustit pres java -jar mojeaplikace.jar a nebo deploynu mojeaplikace.jar na server
+- .jar file najdu v libs, a to můžu but spustit pres java -jar aplikace.jar a nebo deploynu aplikace.jar na server
 
 # 9. Error Handling
 
